@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="@dimen/item_height">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_item"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_margin="@dimen/padding_small"
+            android:src="@drawable/ic_chevron_up"
+            android:layout_width="@dimen/item_image"
+            android:layout_height="@dimen/item_image"/>
+
+        <TextView
+            android:id="@+id/tvVolume"
+            android:textSize="@dimen/item_text_size"
+            android:text="@string/usage"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvQuarter"
+            android:textSize="@dimen/item_text_size"
+            android:text="@string/quarter"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
